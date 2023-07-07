@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #163269;
+  --primary-dark-color: #142d5f;
+}
+
+/* Navbar  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  line-height: 7rem;
+  padding: 0 4%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.brand .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand .logo img {
+  width: 80%;
+  height: auto;
+}
+
+.navbar-menu a {
+  font-family: inherit;
+  display: inline-block;
+  margin: 0 0;
+  margin-right: 3rem;
+  color: #222;
+  font-size: 1.6rem;
+  transition: 0.2s;
+}
+
+.navbar-menu a:hover {
+  color: var(--primary-dark-color);
+}
+
+.navbar-btns-box {
+  padding-top: 1.5rem;
+}
+
+.navbar-btns-box button {
+  display: inline-block;
+  margin: 0 0;
+  margin-right: 1rem;
+  background: none;
+}
+
+.navbar-btns-box button ion-icon {
+  font-size: 1.8rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.navbar-btns-box button ion-icon:hover {
+  background-color: var(--primary-dark-color);
+}
+
+#menu-btn {
+  display: none;
+}
+
+#close-btn {
+  display: none;
+}
+
+section {
+  height: 100vh;
+}
