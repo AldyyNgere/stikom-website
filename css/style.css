@@ -1,3 +1,52 @@
 :root {
   --primary-color: #192f59;
 }
+
+/* Header  */
+.main-nav {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  line-height: 7rem;
+}
+
+.brand .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80%;
+  height: auto;
+}
+
+.nav-menu li {
+  display: inline-block;
+}
+
+.nav-menu li:not(.nav-menu li:last-child) {
+  margin-right: 3rem;
+}
+
+.social-media-box a {
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+.social-media-box a:not(.social-media-box a:last-child) {
+  margin-right: 2rem;
+}
+
+.mobile-btn button {
+  display: inline-block;
+  font-size: 2rem;
+  background: none;
+}
+
+.mobile-btn button ion-icon {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 50%;
+}

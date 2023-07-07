@@ -21,3 +21,8 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
 }
+
+button {
+  cursor: pointer;
+  transition: 0.3s;
+}
