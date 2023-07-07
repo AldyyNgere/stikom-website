@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #192f59;
+  --primary-dark-color: #172a50;
+}
+
+/* tablet  */
+@media (max-width: 768px) {
+  html {
+    font-size: 62%;
+  }
+
+  body {
+    background-color: red;
+  }
+
+  /* Header  */
+
+  .nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30rem;
+    height: 100vh;
+    background-color: var(--primary-color);
+  }
+
+  .nav-menu li {
+    display: block;
+    text-align: center;
+    padding-left: 5rem;
+  }
+
+  .nav-menu li a {
+    color: #fff;
+  }
+
+  .nav-menu li a::after {
+    background-color: #fff;
+  }
+}
+
+/* Mobile phone  */
+@media (max-width: 320px) {
+  body {
+    background-color: green;
+  }
+}

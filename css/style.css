@@ -1,15 +1,22 @@
 :root {
   --primary-color: #192f59;
+  --primary-dark-color: #172a50;
 }
 
 /* Header  */
 .main-nav {
-  background-color: red;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
-  line-height: 7rem;
+  line-height: 9rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .brand .logo {
@@ -27,16 +34,57 @@
 }
 
 .nav-menu li:not(.nav-menu li:last-child) {
-  margin-right: 3rem;
+  margin-right: 5rem;
+}
+
+.nav-menu li a {
+  color: var(--primary-color);
+  position: relative;
+}
+
+.nav-menu li a::after {
+  content: "";
+  background-color: var(--primary-color);
+  width: 0;
+  height: 10%;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  transform-origin: left;
+  transition: 0.3s;
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
 }
 
 .social-media-box a {
   display: inline-block;
   font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-top: 2rem;
+}
+
+.social-media-box a ion-icon {
+  background-color: var(--primary-color);
+  padding: 0.7rem;
+  color: #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+  border: solid 3px var(--primary-color);
+}
+
+.social-media-box a ion-icon:hover {
+  background-color: #fff;
+  color: var(--primary-color);
 }
 
 .social-media-box a:not(.social-media-box a:last-child) {
   margin-right: 2rem;
+}
+
+.mobile-btn {
+  display: none;
 }
 
 .mobile-btn button {
@@ -49,4 +97,13 @@
   background-color: var(--primary-color);
   padding: 1rem;
   border-radius: 50%;
+  color: #fff;
+}
+
+section {
+  height: 100vh;
+}
+
+section:last-child {
+  background: blue;
 }
