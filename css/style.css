@@ -29,20 +29,20 @@
   height: auto;
 }
 
-.nav-menu li {
+.menu-list {
   display: inline-block;
 }
 
-.nav-menu li:not(.nav-menu li:last-child) {
+.menu-list:not(.menu-list:last-child) {
   margin-right: 5rem;
 }
 
-.nav-menu li a {
+.menu-list a {
   color: var(--primary-color);
   position: relative;
 }
 
-.nav-menu li a::after {
+.menu-list a::after {
   content: "";
   background-color: var(--primary-color);
   width: 0;
@@ -54,7 +54,7 @@
   transition: 0.3s;
 }
 
-.nav-menu li a:hover::after {
+.menu-list a:hover::after {
   width: 100%;
 }
 
@@ -102,8 +102,4 @@
 
 section {
   height: 100vh;
-}
-
-section:last-child {
-  background: blue;
 }
