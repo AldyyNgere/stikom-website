@@ -1,0 +1,78 @@
+:root {
+  --primary-color: #192f59;
+}
+
+/* Header  */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 6%;
+  height: 8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 80%;
+  height: auto;
+}
+
+.navbar-menu a {
+  display: inline-block;
+  margin-right: 3rem;
+  color: var(--primary-color);
+  position: relative;
+  transition: 0.3s;
+}
+
+.navbar-menu a::after {
+  content: "";
+  width: 0;
+  height: 10%;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform-origin: left;
+  transition: 0.3s;
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
+}
+
+.navbar-btns-box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: none;
+}
+
+.navbar-btns-box button {
+  background: none;
+}
+
+.navbar-btns-box button ion-icon {
+  font-size: 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.7rem;
+  border-radius: 50%;
+  border: solid 0.3rem var(--primary-color);
+  transition: 0.3s;
+}
+
+.navbar-btns-box button ion-icon:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
