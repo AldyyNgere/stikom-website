@@ -24,10 +24,6 @@ button {
   transition: 0.3s;
 }
 
-section {
-  height: 100vh;
-}
-
 #menu-btn {
   display: none;
 }

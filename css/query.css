@@ -5,7 +5,6 @@
   }
 
   body {
-    /* background-color: red; */
     position: relative;
   }
 
@@ -29,7 +28,6 @@
 
   .navbar-menu a {
     color: #fff;
-    /* background-color: green; */
   }
 
   .navbar-menu a::after {
@@ -62,6 +60,31 @@
   #close-btn.nav-active {
     display: inline-block;
   }
+
+  .hero {
+    padding-top: 13rem;
+  }
+
+  .hero-container {
+    column-gap: 3rem;
+  }
+
+  .heading {
+    font-size: 5rem;
+  }
+
+  .hero-desc {
+    font-size: 1.5rem;
+  }
+
+  .hero-btns-box a:first-child {
+    padding: 1.2rem 2.2rem;
+    background-color: var(--primary-color);
+  }
+
+  .hero-btns-box a:last-child {
+    padding: 1rem 1.9rem;
+  }
 }
 
 /* Mobile Phone  (IPhone XR)*/
@@ -71,7 +94,6 @@
   }
 
   body {
-    /* background-color: green; */
   }
 
   .main-nav {
@@ -89,5 +111,20 @@
   .navbar-menu {
     width: 100%;
     padding-top: 5rem;
+  }
+
+  .hero {
+    padding-top: 8rem;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  .hero-img-box {
+    display: flex;
+    justify-content: center;
   }
 }

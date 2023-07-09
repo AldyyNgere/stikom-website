@@ -1,5 +1,6 @@
 :root {
   --primary-color: #192f59;
+  --primary-dark-color: #0f1c35;
 }
 
 /* Header  */
@@ -75,4 +76,70 @@
 .navbar-btns-box button ion-icon:hover {
   background-color: #fff;
   color: var(--primary-color);
+}
+
+/* Hero section  */
+
+.hero {
+  padding-top: 8rem;
+}
+
+.hero-container {
+  max-width: 86%;
+  /* background-color: red; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 6rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.hero-desc {
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.hero-btns-box a {
+  display: inline-block;
+  margin-right: 1rem;
+  background-color: #fff;
+  border-radius: 50rem;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.hero-btns-box a:first-child {
+  padding: 1.3rem 2.3rem;
+  background-color: var(--primary-color);
+}
+
+.hero-btns-box a:first-child:hover {
+  background-color: var(--primary-dark-color);
+}
+
+.hero-btns-box a:last-child {
+  padding: 1.1rem 2rem;
+  border: 0.3rem solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.hero-btns-box a:last-child:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.hero-img {
+  z-index: -1;
+  width: 90%;
+  height: auto;
 }
